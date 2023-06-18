@@ -29,8 +29,8 @@ print(f'{input_number} -> {first_number + second_number + third_number} ({first_
 60 -> 10  40  10
 """
 s = int(input('Введите общее число журавликов: '))
-x = s // 3
-print (f'{s} -> {x // 2} {x * 2} {x // 2}')
+intermediate_value = s // 3
+print (f'{s} -> {intermediate_value // 2} {intermediate_value * 2} {intermediate_value // 2}')
 
 """
 Задача №3
