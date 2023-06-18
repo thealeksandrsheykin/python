@@ -7,18 +7,17 @@
 123 -> 6 (1 + 2 + 3)
 100 -> 1 (1 + 0 + 0)
 """
-#
-# number = int(input('Введите трехзначное число: '))
-# input_number = number
-#
-# first_number = number // 100
-# number = number % 100
-#
-# second_number = number // 10
-# third_number = number % 10
-#
-#
-# print(f'{input_number} -> {first_number + second_number + third_number} ({first_number}+{second_number}+{third_number})')
+number = int(input('Введите трехзначное число: '))
+input_number = number
+
+first_number = number // 100
+number = number % 100
+
+second_number = number // 10
+third_number = number % 10
+
+
+print(f'{input_number} -> {first_number + second_number + third_number} ({first_number}+{second_number}+{third_number})')
 
 """
 Задача №2
@@ -29,9 +28,9 @@
 24 -> 4   16  4
 60 -> 10  40  10
 """
-# s = int(input('Введите общее число журавликов: '))
-# x = s // 3
-# print (f'{s} -> {x // 2} {x * 2} {x // 2}')
+s = int(input('Введите общее число журавликов: '))
+x = s // 3
+print (f'{s} -> {x // 2} {x * 2} {x // 2}')
 
 """
 Задача №3
@@ -43,9 +42,9 @@
 123456 -> no
 """
 
-ticket = str(input('Введите номер билета: '))
-x = [int(i) for i in ticket]
-if sum(x[:3]) == sum(x[3:]):
+ticket = input('Введите номер билета: ')
+numbers_of_ticket = [int(i) for i in ticket]
+if sum(numbers_of_ticket[:3]) == sum(numbers_of_ticket[3:]):
     print(f'{ticket} -> yes')
 else:
     print(f'{ticket} -> no')
