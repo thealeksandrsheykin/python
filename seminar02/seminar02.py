@@ -36,13 +36,21 @@ print(tails)
 
 s = int(input('Введите сумму чисел: '))
 p = int(input('Введите произведение чисел: '))
+
+# Способ №1
 # x + y = s
 # x * y = p
 # y = s - x => xs - x*x - p = 0
-D = (-s)**2 - 4 * p
-x = int((s + D ** 0.5)/2)
-y = int((s - D ** 0.5)/2)
-print(f'{s} {p} -> {x} {y}')
+# D = (-s)**2 - 4 * p
+# x = int((s + D ** 0.5)/2)
+# y = int((s - D ** 0.5)/2)
+# print(f'{s} {p} -> {x} {y}')
+
+# Способ №2
+for i in range(s):
+    for j in range(p):
+        if s == i + j and p == i * j:
+            print(i, j)
 
 
 """
