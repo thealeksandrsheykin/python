@@ -15,8 +15,6 @@ import random
 3 6 9 12 15 18
 6 12
 """
-
-
 def add_number_to_list(number):
     return [int(input('Введите число: ')) for _ in range(number)]
 
@@ -52,7 +50,6 @@ print(*sorted(list(set(list_n).intersection(set(list_m)))))
 4 -> 1 2 3 4
 9
 """
-
 n = int(input('Введите кол-во кустов: '))
 a = [random.randint(0, 5) for _ in range(n)]
 # -> max = a[i-1] + a[i] + a[i+1]
