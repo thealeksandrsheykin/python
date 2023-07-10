@@ -14,6 +14,15 @@ from random import randint
 -> 1
 """
 
+<<<<<<< HEAD
+# n = int(input('Введите число: '))
+# x = int(input('Введите число, которые нужно проверить: '))
+# list_n = [randint(0, 10) for _ in range(n)]
+# print(n)
+# print(*list_n)
+# print(x)
+# print(f'->{list_n.count(x)}')
+=======
 n = int(input('Введите число: '))
 x = int(input('Введите число, которые нужно проверить: '))
 list_n = [randint(0, 10) for _ in range(n)]
@@ -21,6 +30,7 @@ print(n)
 print(*list_n)
 print(x)
 print(f'->{list_n.count(x)}')
+>>>>>>> origin/main
 
 """
 Требуется найти в массиве A[1..N] самый близкий по величине элемент к заданному числу X. Пользователь в первой строке
@@ -35,6 +45,15 @@ print(f'->{list_n.count(x)}')
 n = int(input('Введите число: '))
 x = int(input('Введите число, которые нужно проверить: '))
 list_n = [randint(0, 10) for _ in range(n)]
+<<<<<<< HEAD
+print(list_n)
+
+
+
+
+
+
+=======
 print(n)
 print(*list_n)
 print(x)
@@ -75,3 +94,4 @@ scrabble = 0
 for letter in word.upper():
     scrabble += scrabble_dict[letter]
 print(scrabble)
+>>>>>>> origin/main
