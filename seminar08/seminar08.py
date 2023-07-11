@@ -16,6 +16,10 @@ class Phonebook:
 
     def __enter__(self):
         self.connection = sqlite3.connect(self.db)
+        with open('phonebook_schema.sql', 'r') as file:
+            schema = file.read()
+            self.connection.executescript(schema)
+            self.connection.commit()
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
