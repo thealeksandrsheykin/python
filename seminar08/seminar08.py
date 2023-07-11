@@ -78,7 +78,7 @@ class Phonebook:
         print(tabulate(self._run_query('select * from phonebook')))
 
 
-class Main():
+class Main:
     MENU = '''Выберите опцию\n\t1.Добавить контакт\n\t2.Удалить контакт\n\t3.Изменить контакт\n\t4.Найти контакт
     5.Показать все контакты\n\t6.Выйти'''
 
